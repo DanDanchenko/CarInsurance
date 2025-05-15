@@ -5,13 +5,14 @@ from telegram.ext import (
     ContextTypes, filters, ConversationHandler
 )
 import openai
+from dotenv import load_dotenv
 import os
 
-
+load_dotenv()
 
 # Settings, Tokens and API-KEYS
-TELEGRAM_TOKEN = "Create"
-OPENAI_API_KEY = "Create"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 openai.api_key = OPENAI_API_KEY
 

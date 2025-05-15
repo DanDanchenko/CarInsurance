@@ -17,6 +17,7 @@ This bot allows users to submit their passport and car document photos, extracts
 - OpenAI API Key
 - python-telegram-bot==20.7
 - openai==1.23.2
+- python-dotenv==1.0.1
 - reportlab==4.0.8
 
  ## Setup Instructions
